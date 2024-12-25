@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { Request, Response } from 'express';
 import { BookServices } from './book.service';
 import bookValidationSchema from './book.validation';
@@ -166,7 +167,7 @@ const deleteBook = async (req: Request, res: Response): Promise<any> => {
     return res.status(201).json({
       success: true,
       message: 'Book deleted successfully',
-      data: result,
+      data: {},
     });
   } catch (error) {
     return res.status(500).json({

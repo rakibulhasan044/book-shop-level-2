@@ -33,4 +33,7 @@ ESLint is used for maintaining high code quality, avoiding common errors, and im
 
 ## instructions on setting up the project locally
 
-- For running file locally download the file from github repository and run npm i command in terminal, all the dependency will be download automatically and the project is good to run. 
+- For running file locally download the file from github repository and run npm i command in terminal, all the dependency will be download automatically.Then create an env file add port and mongodb url
+
+PORT = your port 
+DATABASE_URL = your mongodb url
